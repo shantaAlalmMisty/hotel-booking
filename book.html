@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Book </title>
+  <link rel="icon" type="image/icon" href="images/booking.png">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="./main.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+    <div id="container" class="container">
+        <nav class="navbar">
+            <a class="logo" href="index.html">La Hotel</a>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="open"></i>
+                <i class="fas fa-times" id="close"></i>
+            </label>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="rooms.html" class="nav-link">Rooms</a></li>
+                <li class="nav-item"><a href="restaurant.html" class="nav-link">Restaurant</a></li>
+                <li class="nav-item"><a href="spa.html" class="nav-link">Spa</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="book.html" class="nav-link book-btn">Book</a></li>
+            </ul>
+        </nav>
+    </div>
+
+  <!-- /.form-group -->
+  <form action="">
+  <!--  General -->
+  <div class="form-group">
+    <h2 class="heading">BOOKING </h2>
+    <div class="controls">
+      <input type="text" id="name" class="floatLabel" name="name">
+      <label for="name">Name</label>
+    </div>
+    <div class="controls">
+      <input type="text" id="email" class="floatLabel" name="email">
+      <label for="email">Email</label>
+    </div>       
+    <div class="controls">
+      <input type="tel" id="phone" class="floatLabel" name="phone">
+      <label for="phone">Phone</label>
+    </div>
+      <div class="grid">
+        <div class="col-2-3">
+          <div class="controls">
+           <input type="text" id="street" class="floatLabel" name="street">
+           <label for="street">Street</label>
+          </div>          
+        </div>
+        <div class="col-1-3">
+          <div class="controls">
+            <input type="number" id="street-number" class="floatLabel" name="street-number">
+            <label for="street-number">Number</label>
+          </div>          
+        </div>
+      </div>
+      <div class="grid">
+        <div class="col-2-3">
+          <div class="controls">
+            <input type="text" id="city" class="floatLabel" name="city">
+            <label for="city">City</label>
+          </div>         
+        </div>
+        <div class="col-1-3">
+          <div class="controls">
+            <input type="text" id="post-code" class="floatLabel" name="post-code">
+            <label for="post-code">Post Code</label>
+          </div>         
+        </div>
+      </div>
+      <div class="controls">
+        <input type="text" id="country" class="floatLabel" name="country">
+        <label for="country">Country</label>
+      </div>
+  </div>
+  <!--  Details -->
+  <div class="form-group">
+    <h2 class="heading">DETAILS</h2>
+    <div class="grid">
+    <div class="col-1-4 col-1-4-sm">
+      <div class="controls">
+        <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+        <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrive</label>
+      </div>      
+    </div>
+    <div class="col-1-4 col-1-4-sm">
+      <div class="controls">
+        <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
+        <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Depart</label>
+      </div>      
+    </div>
+      </div>
+      <div class="grid">
+    <div class="col-1-3 col-1-3-sm">
+      <div class="controls">
+        <i class="fa fa-sort"></i>
+        <select class="floatLabel">
+          <option value="blank"></option>
+          <option value="1">1 </option>
+          <option value="2">2 </option>
+          <option value="3">3 </option>
+          <option value="4">4 </option>
+          <option value="5">5 </option>
+          <option value="6">6 </option>
+          <option value="7">7 </option>
+          <option value="8">8 </option>
+          
+        </select>
+        <label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp;People</label>
+      </div>      
+    </div>
+    <div class="col-1-3 col-1-3-sm">
+    <div class="controls">
+      <i class="fa fa-sort"></i>
+      <select class="floatLabel">
+        <option value="blank"></option>
+        <option value="Zuri-zimmer">Luxury Suite</option>
+        <option value="Zuri-zimmer">Premium Suite</option>
+        <option value="deluxe" selected>Deluxe Black Room</option>
+        <option value="Zuri-zimmer">Studio Broadway Room</option>
+        <option value="Zuri-zimmer">Standart One Person Room</option>
+        <option value="Zuri-zimmer">Studio Small Room</option>
+        <option value="Zuri-zimmer">Studio Corporate Room</option>
+        <option value="Zuri-zimmer">Deluxe Twin Room</option>
+
+      </select>
+      <label for="fruit">Room</label>
+     </div>     
+    </div>
+
+    <div class="col-1-3 col-1-3-sm">
+    <div class="controls">
+      <i class="fa fa-sort"></i>
+      <select class="floatLabel">
+        
+        <option value="single-bed">Zweibett</option>
+        <option value="double-bed" selected>Doppelbett</option>
+      </select>
+      <label for="fruit">Bedding</label>
+     </div>     
+    </div>
+      
+     </div>
+      <div class="grid">
+        <p class="info-text">Please describe your needs e.g. Extra beds, children's cots</p>
+        <br>
+        <div class="controls">
+          <textarea name="comments" class="floatLabel" id="comments"></textarea>
+          <label for="comments">Comments</label>
+          </div>
+            <button type="submit" value="Submit" class="col-1-4">Submit</button>
+      </div>  
+  </div> 
+</form>
+
+
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://raw.githubusercontent.com/andiio/selectToAutocomplete/master/jquery-ui-autocomplete.js'></script>
+<script src='https://raw.githubusercontent.com/andiio/selectToAutocomplete/master/jquery.select-to-autocomplete.js'></script>
+<script src='https://raw.githubusercontent.com/andiio/selectToAutocomplete/master/jquery.select-to-autocomplete.min.js'>
+</script>
+<script  src="./script.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
